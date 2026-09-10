@@ -3,83 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tristan's Gaming Profile</title>
+    <title>Tristan Dayle | Personal Hub</title>
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #050a0e;
-            color: #a3c2c2;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #12181f; /* Dark blue-grey background */
+            color: #e0e6ed;
             margin: 0;
             padding: 20px;
             display: flex;
             justify-content: center;
         }
         .container {
-            max-width: 600px;
+            max-width: 1000px;
             width: 100%;
         }
-        h1, h2 {
-            color: #00ffcc;
-            border-bottom: 1px solid #00ffcc;
-            padding-bottom: 10px;
+        
+        /* Header styling */
+        .header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #1a2a3a 0%, #12181f 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #2a3b4c;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4a90e2;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #64b5f6;
             text-transform: uppercase;
             letter-spacing: 2px;
+            font-size: 2.2em;
         }
-        .game-card, .social-card {
-            background-color: rgba(0, 255, 204, 0.05);
-            border: 1px solid rgba(0, 255, 204, 0.3);
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
-        .uid {
+
+        /* Card Styling */
+        .card {
+            background-color: #1a232c;
+            border: 1px solid #2a3b4c;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .card h2 {
+            margin-top: 0;
             color: #ffffff;
-            background-color: rgba(0, 255, 204, 0.2);
+            border-bottom: 1px solid #2a3b4c;
+            padding-bottom: 10px;
+            font-size: 1.4em;
+        }
+        .card h3 {
+            color: #64b5f6;
+            margin-bottom: 5px;
+        }
+        
+        /* Text and Highlights */
+        p {
+            line-height: 1.5;
+            color: #b0bec5;
+        }
+        .highlight {
+            color: #ffffff;
+            background-color: rgba(100, 181, 246, 0.15);
             padding: 2px 6px;
-            border-radius: 3px;
-            font-weight: bold;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
         }
-        a {
-            color: #00ffcc;
+        
+        /* Social Links */
+        .social-link {
+            display: block;
+            background-color: #212d3b;
+            color: #e0e6ed;
             text-decoration: none;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: background-color 0.2s;
         }
-        a:hover {
-            text-decoration: underline;
-            text-shadow: 0 0 8px #00ffcc;
+        .social-link:hover {
+            background-color: #2a3b4c;
+            border-left: 4px solid #64b5f6;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Hi, I'm Tristan Dayle</h1>
-        <p>Welcome to my personal hub. Add me in-game or connect with me on socials below!</p>
-
-        <h2>My Games & UIDs</h2>
-
-        <div class="game-card">
-            <h3>Genshin Impact</h3>
-            <p>Main Account UID: <span class="uid">[Enter UID Here]</span></p>
-            <p>Alt Account UID: <span class="uid">[Enter UID Here]</span></p>
-        </div>
-
-        <div class="game-card">
-            <h3>Minecraft (Android)</h3>
-            <p>Gamertag: <span class="uid">[Enter Gamertag Here]</span></p>
-        </div>
         
-        <div class="game-card">
-            <h3>Papa's Games</h3>
-            <p>Currently Managing: <span class="uid">Donuteria To Go!</span> & <span class="uid">Wingeria To Go!</span></p>
+        <!-- Header Section with Picture -->
+        <div class="header">
+            <!-- Replace 'profile.jpg' with your actual image file name once uploaded -->
+            <img src="profile.jpg" alt="Tristan Dayle" class="profile-pic" onerror="this.src='https://via.placeholder.com/100/1a2a3a/64b5f6?text=TD'">
+            <div>
+                <h1>Tristan Dayle</h1>
+            </div>
         </div>
 
-        <h2>Connect With Me</h2>
+        <div class="grid-container">
+            
+            <!-- About Me Card -->
+            <div class="card" style="grid-column: 1 / -1;">
+                <h2>About Me</h2>
+                <p>I'm an Information Technology student at Batangas State University with a passion for both code and design. When I'm not writing Python, C++, or SQL, I spend my time designing custom athletic apparel, sketching digital art, and exploring tech-focused Chinese web novels. This hub is where I keep all my gaming profiles and socials in one place.</p>
+            </div>
 
-        <div class="social-card">
-            <p>📸 Instagram: <a href="[Your Link]">[Your Handle]</a></p>
-            <p>🐦 Twitter/X: <a href="[Your Link]">[Your Handle]</a></p>
-            <p>🎮 Discord: <span class="uid">[Your Username]</span></p>
+            <!-- Genshin Impact Card -->
+            <div class="card">
+                <h2>Genshin Impact</h2>
+                <p>Main Account UID: <span class="highlight">[Enter Main UID]</span></p>
+                <p>Alt Account UID: <span class="highlight">[Enter Alt UID]</span></p>
+                <p>Current Weapon Focus: Earthshaker / Prototype Archaic</p>
+            </div>
+
+            <!-- Minecraft Card -->
+            <div class="card">
+                <h2>Minecraft (Android)</h2>
+                <p>Gamertag: <span class="highlight">[Enter Gamertag]</span></p>
+                <p>Status: Active</p>
+            </div>
+
+            <!-- Casual Games Card -->
+            <div class="card">
+                <h2>Management Sims</h2>
+                <p>Currently playing:</p>
+                <ul>
+                    <li><span class="highlight">Papa's Donuteria To Go!</span></li>
+                    <li><span class="highlight">Papa's Wingeria To Go!</span></li>
+                </ul>
+            </div>
+
+            <!-- Socials Card -->
+            <div class="card">
+                <h2>Connect With Me</h2>
+                <a href="#" class="social-link">📸 Instagram: @[YourHandle]</a>
+                <a href="#" class="social-link">🐦 Twitter/X: @[YourHandle]</a>
+                <a href="#" class="social-link">🎮 Discord: [YourUsername]</a>
+            </div>
+
         </div>
     </div>
 
