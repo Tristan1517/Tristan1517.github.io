@@ -1,0 +1,43 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #050a0e;
+    color: #a3c2c2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+h1, h2 {
+    color: #00ffcc;
+    border-bottom: 1px solid #00ffcc;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.game-card, .social-card {
+    background-color: rgba(0, 255, 204, 0.05);
+    border: 1px solid rgba(0, 255, 204, 0.3);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+}
+.uid {
+    color: #ffffff;
+    background-color: rgba(0, 255, 204, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 8px #00ffcc;
+}
